@@ -7,7 +7,8 @@ This is a **School Management App** built using **Electron.js**. It allows users
 1. **Add Students**
    - Easily add new students to the system using a form.
    - Short command to open the Add Student form: `Ctrl + Shift`.
-   - Interface example: ![Add Student Form](add.png)
+   - Interface example: 
+   <img src="./images/add.png"/>
 
 2. **Calculate Total Price**
    - Automatically calculate the total price of all students.
@@ -15,7 +16,8 @@ This is a **School Management App** built using **Electron.js**. It allows users
 3. **Update Student Price**
    - Modify the price for individual students.
    - Short command to open the Update Price form: `Ctrl + E`.
-   - Interface example: ![Update Price Form](chg.png)
+   - Interface example: 
+   <img src="./images/chg.png"/>
 
 4. **Search for Students**
    - Quickly search for specific students.
@@ -24,7 +26,8 @@ This is a **School Management App** built using **Electron.js**. It allows users
 5. **Reset Application State**
    - Hide all open forms (Add, Edit, Search) and return to the initial state of the app.
    - Short command to reset: `Ctrl + Alt`.
-   - Initial interface example: ![Initial Interface](init.png)
+   - Initial interface example:
+   <img src="./images/init.png"/>
 
 ## Getting Started
 
@@ -51,9 +54,9 @@ This is a **School Management App** built using **Electron.js**. It allows users
 - Ensure all required data is entered correctly to avoid issues.
 
 ## Screenshots
-- **Initial Interface**: ![Initial Interface](init.png)
-- **Add Student Form**: ![Add Student Form](add.png)
-- **Update Price Form**: ![Update Price Form](chg.png)
+- **Initial Interface**: <img src="./images/init.png"/>
+- **Add Student Form**: <img src="./images/add.png"/>
+- **Update Price Form**: <img src="./images/chg.png"/>
 
 ## Contributing
 If you'd like to contribute to this project, feel free to fork the repository and submit a pull request.
