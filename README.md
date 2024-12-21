@@ -34,11 +34,11 @@ This is a **School Management App** built using **Electron.js**. It allows users
 ### Installation
 1. Clone this repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/iyehah/Electron-school-app.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd school-management-app
+   cd Electron-school-app
    ```
 3. Install dependencies:
    ```bash
@@ -65,4 +65,4 @@ If you'd like to contribute to this project, feel free to fork the repository an
 This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
-For any questions or issues, feel free to reach out to the project maintainer.
+For any questions or issues, feel free to reach out to the project maintainer. @iyehah
