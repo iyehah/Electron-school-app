@@ -1,0 +1,21 @@
+{
+  "name": "electron-demo",
+  "version": "1.0.0",
+  "description": "Electron demo app for a school presentation",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build":"electron-packager ."
+  },
+  "author": "Simon Schiller",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^1.8.8"
+  },
+  "dependencies": {
+    "fs-extra": "^11.2.0",
+    "html-pdf": "^3.0.1",
+    "nedb": "^1.8.0",
+    "puppeteer": "^22.1.0"
+  }
+}

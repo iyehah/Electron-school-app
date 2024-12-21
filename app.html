@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="css/skeleton.css"> -->
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/index.js"></script>
+  <title>Centre Elaoula</title>
+</head>
+<body>
+  <header>
+
+  </header>
+  <div class="tools">
+    <div class="statistic-box">
+      <div class="box">
+        <h3><i class="icon-creditcards"></i></h3><span id="res">0</span><span></span>
+      </div>
+      <div class="box">
+        <h3><i class="icon-users"></i></h3><span id="cunt">0</span><span></span>
+      </div>
+      <div class="box">
+        <h3><i class="icon-qrcode"></i></h3><span id="codeStudent"></span><span></span>
+      </div>
+      <div class="box">
+        <h3><i class="icon-layers1"></i></h3><span id="countLevel">0</span>
+        <select id="selectLevel">
+          <option value="choose Level pluse" selected disabled></option>
+          <option value="1As">1As</option>
+          <option value="2As">2As</option>
+          <option value="3As">3As</option>
+          <option value="4As">4As</option>
+          <option value="5C">5C</option>
+          <option value="6C">6C</option>
+          <option value="7C">7C</option>
+          <option value="5D">5D</option>
+          <option value="6D">6D</option>
+          <option value="7D">7D</option>
+        </select>
+      </div>
+    </div>
+      <div class="search-box" id="search">
+        <span><i class="icon-search1 i-search"></i></span>
+    <input type="text" id="filterInput" placeholder="Enter value to filter">   
+    </div>
+  </div>
+    <!--======================= Start Container Div =========================-->
+  <div class="container">
+    <!--======================= Start Left ========================================-->
+
+    <!--======================= End Left ========================================-->
+    <!--======================= Start Center ===============================-->
+    <div class="center">                                                                                                                        
+    <table class="u-full-width" id="dataTable">
+      <thead>
+        <tr>
+          <th>CodeRim</th>
+          <th>Name</th>
+          <th>Level</th>
+          <th>Date</th>
+          <th>New</th>
+          <th>Price</th>
+          <th>Control</th>
+        </tr>
+      </thead>
+      <tbody id="tablebody">
+      </tbody>
+    </table>
+    <span class="data-nul" id="dataNul"></span>
+    </div>
+    <!--======================= End Center =================================-->
+
+    <!--======================= Start Right ================================-->
+    <!-- <div class="right">
+      
+    </div> -->
+    <!--======================= End Right ==================================-->
+  </div>
+    <!--======================= End Container Div ==========================-->
+
+    <!--======================= Start Form Add New Student  ================-->
+    <button class="open-button btn" onclick="openForm()"><i class="icon-user-plus open"></i></button>
+    <div class="form-popup" id="popupForm">
+      <button class="close-button btn" onclick="closeForm()"><i class="icon-x close"></i></button>
+      <form class="row">
+      <div class="columns">
+          <i class="icon-lock"></i>
+          <input class="u-full-width" placeholder="Code-Rim" id="code" type="text">
+        </div>
+        <div class="columns">
+          <i class="icon-user"></i>
+          <input class="u-full-width" placeholder="Name" id="name" type="text">
+        </div>
+        <div class="columns">
+          <i class="icon-layers1"></i>
+          <select name="level" id="level">
+            <option value="choose Level pluse" selected disabled>level</option>
+            <option value="1As">1As</option>
+            <option value="2As">2As</option>
+            <option value="3As">3As</option>
+            <option value="4As">4As</option>
+            <option value="5C">5C</option>
+            <option value="6C">6C</option>
+            <option value="7C">7C</option>
+            <option value="5D">5D</option>
+            <option value="6D">6D</option>
+            <option value="7D">7D</option>
+          </select>
+        </div>
+        <div class="columns">
+          <i class="icon-calendar"></i>
+          <input class="u-full-width" placeholder="Date of register" id="date" type="date">
+        </div>
+        <div class="columns">
+          <i class="icon-creditcards"></i>
+          <input class="u-full-width" placeholder="Price" id="price" type="number" min="0">
+        </div>
+          <!-- <input class="btn add" value="Add" id="add" type="button"> -->
+          <div class="diff">
+          <button class="btn add" onclick="closeForm()" id="add"><i class="icon-upload-cloud insert"></i></button>
+          </div>
+      </form>
+    </div>
+    <!--======================= End Form Add New Student ====================-->
+    <!--======================= Start Form Edit Price =======================-->
+    <div class="edit-price" id="editPrice">
+      <button class="close-button btn" onclick="closeEditPrice()"><i class="icon-x close"></i></button>
+      <div class="infoStudent">
+        <div class="codeinfo">
+          <i class="icon-qrcode"></i>
+          <span></span>
+          <code id="IDx">Error code !</code>
+        </div>
+        <table>
+          <thead>
+            <th><code>Nam</code></th>
+            <th><code>Level</code></th>
+            <th><code>Time</code></th>
+            <th><code>Old Price</code></th>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code id="nameStudent">?</code></td>
+              <td><code id="levelStudent">?</code></td>
+              <td><code id="time">?</code></td>
+              <td><code id="oldPrice">?</code></td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+      <div class="entry">
+      <input type="number" id="newPrice" min="0" placeholder="New Price" value="0">
+      <button class="updateP" id="updateP"><i class="icon-check insert"></i></button>
+      </div>
+  </div>
+    <!--======================= End Form Edit Price =========================-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    function closeEditPrice(){
+      document.getElementById("editPrice").style.display = "none";
+    }
+    function closeSearch(){
+      document.getElementById("search").style.display = "none";
+    }
+    function openSearch(){
+      document.getElementById("search").style.display = "flex";
+    }
+    function openEditPrice(){
+      document.getElementById("editPrice").style.display = "block";
+    }
+    function openForm() {
+      document.getElementById("popupForm").style.display = "block";
+    }
+    function closeForm() {
+      document.getElementById("popupForm").style.display = "none";
+    }
+   document.addEventListener("keydown",(e)=>{
+    if (e.ctrlKey && e.shiftKey) {
+      openForm();
+    }
+    if (e.ctrlKey && e.altKey) {
+      closeForm();
+      closeEditPrice();
+      closeSearch()
+    }
+    if (e.ctrlKey && e.key == 'e') {
+      openEditPrice();
+    }
+    if (e.ctrlKey && e.key == 'f') {
+      openSearch()
+    }
+   });
+   
+   function filterTable() {
+      // Get input element and filter value
+      var input = document.getElementById("filterInput");
+      var filter = input.value.toUpperCase();
+
+      // Get the table and table rows
+      var table = document.getElementById("dataTable");
+      var rows = table.getElementsByTagName("tr");
+
+      // Loop through all rows, hide those that don't match the filter
+      for (var i = 1; i < rows.length; i++) {
+        var cells = rows[i].getElementsByTagName("td");
+        var shouldHide = true;
+
+        // Loop through all cells in the current row
+        for (var j = 0; j < cells.length; j++) {
+          var cellValue = cells[j].textContent || cells[j].innerText;
+
+          // Check if the cell value matches the filter
+          if (cellValue.toUpperCase().indexOf(filter) > -1) {
+            shouldHide = false;
+            break;
+          }
+        }
+        // Set the display property based on the filter result
+        rows[i].style.display = shouldHide ? "none" : "";
+      }
+    }
+
+    // Attach the filter function to the input element's 'input' event
+    var inputElement = document.getElementById("filterInput");
+    inputElement.addEventListener("input", filterTable);
+</script>
+</body>
+</html>

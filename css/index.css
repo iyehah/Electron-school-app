@@ -1,0 +1,415 @@
+:root{
+  --bg-color-1:#0d6084;
+  --color-1:#8b6430;
+  --bg-color-2:#f9f9f9;
+  --white:#ffffff;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scrollbar-width: none;
+  scrollbar-color: var(--bg-color-1) var(--white);
+}
+html::-webkit-scrollbar{
+  width: 1px;
+}
+body{
+  user-select: none;
+  cursor: default;
+}
+.login-container{
+  background-color: var(--bg-color-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+.login-container form{
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  height: 50%;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.login-container h3{
+  margin: 50px;
+}
+.login-container input{
+  background-color: var(--bg-color-2);
+  border: 1px solid var(--bg-color-1);
+  margin-bottom: 5px;
+}
+.login-container button{
+  margin-top: 20px;
+  text-align: center;
+  width: 40%;
+  padding: 10px 10px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: var(--bg-color-1);
+  color: var(--white);
+}
+header{
+  background-color: var(--bg-color-1);
+  border-bottom: 1px solid var(--bg-color-2);
+  width: 100%;
+  height: 40px;
+}
+input::placeholder{
+  color: var(--bg-color-1);
+}
+.container{
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 80vh;
+  max-height: 88vh;
+  padding:20px;
+}
+.container > .center{
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding: 5px 5px;
+}
+table{
+  width: 100%;
+  background-color: var(--bg-color-1);
+  border-radius: 5px;
+}
+.data-nul{
+  position: absolute;
+  background-color: none;
+  width: 90%;
+  text-align: center;
+  top: 70px;
+  left: 25px;
+  color: red;
+}
+.left{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  background-color:var(--bg-color-2);
+  width:500px;
+  height: 70px;
+  padding: 20px;
+  top: 70%;
+  z-index: 102;
+}
+.left span{
+  position: relative;
+}
+.left span i{
+  position: absolute;
+  background-color: var(--bg-color-2);
+  padding: 10px 10px;
+  font-size: 30px !important;
+  border-radius: 50%;
+  top: -50px;
+  left: -20px !important;
+}
+.left  select{
+  position: relative;
+  width: 40%;
+  top:-22px ;
+  left: 39%;
+  height: 20px;
+  background-color: none;
+}
+.left >.top ,.left > .center ,.left > .bottom{
+  width: 33.33333333333333%;
+  background-color: none;
+}
+
+th{
+  position: sticky;
+  z-index: 99;
+  top: -5px;
+  background-color: var(--bg-color-1);
+  color: var(--white);
+  padding: 10px 10px;
+}
+td{
+  background-color:var(--white);
+  text-align: center;
+}
+.tools{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  background-color: var(--bg-color-1);
+  padding: 20px 20px;
+}
+.tools .statistic-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: none;
+  height: 35px;
+  width: 100%;
+  padding: 10px;
+}
+.tools .statistic-box .box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: none;
+  color: var(--white);
+  height: 35px;
+  width: 20%;
+  border-radius: 3px;
+  border: 2px solid var(--bg-color-2);
+}
+.tools .statistic-box .box i{
+  color: var(--bg-color-2) !important;
+  font-size: 28px !important;
+  top: 2px;
+}
+.tools .statistic-box .box select{
+  width: 10%;
+  background-color: var(--bg-color-1);
+  color: var(--bg-color-2);
+  height: 100%;
+}
+.tools > .search-box{
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-color-1);
+  border: 2px solid var(--bg-color-2);
+  width: 45%;
+  height: 35px !important;
+  border-radius: 3px;
+  height: 100%;
+}
+.tools > .search-box input{
+  border-radius: 3px;
+  width: 92%;
+  height: 30px;
+  background-color: var(--bg-color-1);
+  color: var(--white);
+}
+.tools > .search-box input::placeholder{
+ color: var(--bg-color-2);
+}
+.search-box  .i-search{
+  left: 5%;
+  top: 20%;
+  color: var(--bg-color-2) !important;
+  font-size: 28px !important;
+  cursor: pointer;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  border-radius: 12px;
+  left: 48%;
+  top: 15%;
+  transform: translate(-45%, 10%);
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 100;
+  width: 50%;
+  height: 55%;
+  padding: 40px 40px;
+}
+.row{
+  height: 100%;
+}
+.columns{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-color-2);
+  margin-bottom:10px ;
+}
+i{
+  position: relative;
+  left: 3%;
+  top: -2px;
+  font-size: 20px !important;
+  color: var(--bg-color-1) !important;
+}
+input,select{
+  width: 90%;
+  background-color: #f9f9f9;
+  border: none;
+  height: 40px;
+  padding: 2px 2px;
+  text-justify: center;
+  /* border-left: 1px solid black; */
+}
+button:focus{
+  outline: none;
+}
+input:focus,select:focus{
+  outline: none;
+}
+.diff{
+  text-align: center;
+  position: relative;
+  width: 100%;
+  top: 10px;
+}
+.add{
+  text-align: center;
+  width: 40%;
+  padding: 10px 10px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: var(--bg-color-1);
+  color: var(--white);
+}
+.delete{
+  text-align: center;
+  width: 20%;
+  padding: 5px 5px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: var(--white);
+  color: var(--white);
+}
+.insert , .open {
+  left: 0;
+  top: 0;
+  color: var(--white) !important;
+}
+.close{
+  left: 0;
+  top: 0;
+  color: var(--bg-color-1);
+}
+.delete-icon{
+  left: 0;
+  top: 3px;
+  color: var(--bg-color-1);
+}
+.open-button{
+  cursor: pointer;
+  position: fixed;
+  bottom: 25px;
+  right: 50px;
+  border-radius: 50%;
+  padding: 10px 10px;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: var(--bg-color-1);
+}
+.close-button{
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 15px;
+  width: auto;
+  height: auto;
+  border: none;
+  background-color: none;
+  border-radius: 50%;
+  font-size: 25px;
+  background-color: var(--white);
+}
+.edit-price{
+  display: none;
+  position: fixed;
+  border-radius: 12px;
+  left: 46.5%;
+  top: 15%;
+  transform: translate(-45%, 5%);
+  background-color: var(--white);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 101;
+  width: 60%;
+  padding: 20px 20px;
+}
+.edit-price > .infoStudent{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-bottom: 2px solid var(--bg-color-1);
+  background-color: var(--bg-color-2);
+}
+.edit-price > .infoStudent table {
+  border-radius: 0;
+  margin: 5px;
+  width: 80%;
+  height: 100%;
+}
+.edit-price > .infoStudent table th{
+  padding: 0;
+}
+.edit-price > .infoStudent table td{
+  height: 20px;
+}
+.edit-price > .infoStudent > .codeinfo{
+  background-color: var(--bg-color-2);
+  text-align: center;
+  width: 20%;
+  border-right: 2px solid var(--bg-color-1);
+}
+.edit-price > .infoStudent > .codeinfo #IDx{
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: 20px;
+  background-color: none;
+}
+.edit-price > .infoStudent > .codeinfo .icon-qrcode{
+  font-size: 50px !important;
+  top: 2px;
+}
+.edit-price > .infoStudent span{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-color-2);
+  margin: 10px;
+  border-right: 2px solid var(--bg-color-1);
+}
+.edit-price > .entry{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.edit-price > .entry input{
+  display: block;
+  height: 34px;
+  border-radius:2px;
+  text-align: center;
+}
+
+.edit-price > .entry .updateP{
+  display: block;
+  width: 30%;
+  height: 34px;
+  border: none;
+  background-color: var(--bg-color-1);
+  border-radius:2px;
+  cursor: pointer;
+}
