@@ -65,4 +65,4 @@ If you'd like to contribute to this project, feel free to fork the repository an
 This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
-For any questions or issues, feel free to reach out to the project maintainer. @iyehah
+For any questions or issues, feel free to reach out to the project maintainer. [Iyehah](https://github.com/iyehah)
